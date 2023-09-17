@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Капитошка" - группа полного дня</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="icon" href="images/логотип-капитошки.png" type="image/x-icon">
+    <link rel="stylesheet" href= "css/style.css">
+    <script src="anime.js"></script>
+</head>
+<body>
+    <div id="up"></div>
+    <header>
+        <div id="header_inner">
+            <img class="logo" src="images/логотип_капитошки.png" alt="..." title="Логотип">
+            <div class="slogan" title='"Капитошка"'>"Капитошка"</div>
+            <ul>
+                <li class="start_href" title="Главная страница"><a href="index.html" ><div>Главная страница</div></a></li>
+                <li title="Информация для родителей"><a href="relatives.html"><div>Для родителей</div></a></li>
+                <li title="Информация о нас"><a href="about.html"><div>О нас</div></a></li>
+                <li title="Как с нами связаться?"><a href="contact.html"><div>Контактные данные</div></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="burger">
+        <div class="stick"></div>
+        <div class="stick"></div>
+        <div class="stick"></div>
+    </div>
+    <div class="by_menu">
+        <a href="index.html" class="item" id="first_item_by_menu">Главная страница</a>
+        <a href="relatives.html" class="item">Для родителей</a>
+        <a href="about.html" class="item">О нас</a>
+        <a href="contact.html" class="item">Контактные данные</a>
+    </div>
+    <main>
+        <div id="any-info">
+            <div class="cont_info">
+                <div class="info">
+                    <div id="first_letter_info">
+                        <div class="text">
+                            <p id="first_p_info">Наш детский сад</p>
+                            <i>
+                                <p class="p_info">с радостью встретит деток и их родителей</p>
+                                <p class="p_info">в своём по-домашнему уютном местечке.</p>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <div id="first_img_info"><img id="rainbow-icon" src="images/rainbow_icon.png" alt="..." height="83"><img id="detskiy-sad-icon" src="images/detskiy_sad_icon_without_rainbow.png" alt="Загрузка..."  height="167" width="322"></div>
+            </div>
+            <div class="cont_info" id="cont_info_id1">
+                <div class="info" id="info2">
+                    <div id="second_letter_info">
+                        <i><div class="text">У нас <u>частный дом</u>, собственная <u>площадка для прогулок</u> на свежем воздухе,
+                        на территории которой ведётся видеонаблюдение.</div></i>
+                    </div>
+                    <div class="slider_cont">
+                        <div class="slider">
+                            <div><img src="images/beliy_fon.png" alt="..."></div>
+                            <div><img src="images/beliy_fon.png" alt="..."></div>
+                            <div><img src="images/beliy_fon.png" alt="..."></div>
+                        </div>
+                    </div>
+                    <div class="slider_min">
+                        <a class="active" data-slide-index="0"><img class="active_img" src="images/beliy_fon.png" width="150" alt="..."></a>
+                        <a data-slide-index="1"><img src="images/beliy_fon.png" width="150" alt="..."></a>
+                        <a data-slide-index="2"><img src="images/beliy_fon.png" width="150" alt="..."></a>
+                    </div>
+                </div>
+            </div>
+            <div class="cont_info" id="cont_info_id2">
+                <img id="third_img_info" src="images/dety_icon.png" alt="...">
+                <div class="info">
+                    <div id="third_letter_info">
+                        <i><div class="text">Ваш ребёнок будет находиться под присмотром квалифицированных воспитателей!</div>
+                        <h2 id="last_p_info">Мы приглашаем деток от 1,5 до 6 лет!</h2></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="forms_all">
+            <div class="forms_names">
+                <p class="vhod_name">Авторизация</p>
+                <div class="form_stick"></div>
+                <p class="reg_name">Регистрация</p>
+            </div>
+            <div class="forms">
+                <form id="vhod">
+                    <input type="text" placeholder="Введите логин" class="input1" id="login1">
+                    <input type="text" placeholder="Введите пароль" class="input1" id="parol1">
+                    <img id="glaz" src="images/unglaz.png" alt="...">
+                    <button type="button" class="form_buttons" id="form_but1">Войти</button>
+                </form>
+                <form id="reg">
+                    <input type="text" placeholder="Логин" class="input2" id="login2">
+                    <input type="text" placeholder="Пароль" class="input2" id="parol2">
+                    <img id="glaz2" src="images/unglaz.png" alt="...">
+                    <button type="button" class="form_buttons" id="form_but2">Зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <div class="circle"></div>
+    <script src="script.js"></script>
+    <footer>
+        <a href="https://vk.com/club221568431"><img id="a-vk" title="Ссылка на наш VK" src="images/znak_vk.png" alt="..." width="55"></a>
+        <div id="any-footer-text">
+            <p class="footer_text">Made by Разливаев Дмитрий</p>
+            <p class="footer_text">© Разливаев Д. И., НОУ "Капитошка", 2023</p>
+        </div>
+        <img class="moveUp" title="Наверх" src="images/strelka.png" alt="...">
+    </footer>
+</body>
+</html>

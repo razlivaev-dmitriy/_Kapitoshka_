@@ -1,0 +1,159 @@
+#first-letter-info-contact{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.map {
+    margin-top: 50px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 50;
+    margin-bottom: 100px;
+    height: 450px;
+}
+
+.map::before {
+    content: "";
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    background-color: #032CAB; 
+    z-index: 1;
+    border-radius: 15px;
+    width: 90vw;
+    height: 450px;
+    position: absolute;
+}
+
+.text {
+    color: #fff;
+    z-index: 100;
+    font-size: 40px;
+    margin-top: 30px;
+    width: 45%;
+}
+
+#number{
+    margin-left: 70px;
+}
+
+iframe {
+    position: relative;
+    z-index: 100;
+    background: white;
+    margin-right: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+    iframe{
+        width: 490px;
+        height: 350px;
+    }
+    .text{
+        font-size: 35px;
+    }
+    #number{
+        margin-left: 50px;
+    }
+    .map{
+        height: 400px;
+    }
+    .map::before{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 992px) {
+    iframe{
+        width: 385px;
+        height: 275px;
+    }
+    .text{
+        font-size: 27.5px;
+    }
+    #number{
+        margin-left: 35px;
+    }
+    .map{
+        height: 325px;
+    }
+    .map::before{
+        height: 325px;
+    }
+}
+@media screen and (max-width: 778px) {
+    iframe{
+        width: 280px;
+        height: 200px;
+    }
+    .text{
+        font-size: 25px;
+    }
+    #number{
+        margin-left: 30px;
+    }
+    .map{
+        height: 225px;
+    }
+    .map::before{
+        height: 225px;
+    }
+    @media screen and (max-width: 640px) {
+        iframe{
+            width: 210px;
+            height: 150px;
+        }
+        .text{
+            font-size: 18px;
+        }
+        #number{
+            margin-left: 20px;
+        }
+        .text p{
+            margin-bottom: 0;
+            margin-top: 10px;
+        }
+        #first-p-info-contact{
+            margin-top: 20px;
+        }
+        .map{
+            height: 175px;
+        }
+        .map::before{
+            height: 175px;
+        }
+    }
+    @media screen and (max-width: 472px) {
+        #first-letter-info-contact{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        iframe{
+            margin-bottom: 0;
+            margin-left: 35px;
+        }
+        .text{
+            font-size: 17px;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            width: 200px;
+            text-align: center;
+        }
+        #number{
+            margin: 0;
+        }
+        .text p{
+            margin-top: 7px;
+        }
+        .map{
+            height: 150px;
+            margin-bottom: 0;
+            width: 285px;
+        }
+        .map::before{
+            height: 300px;
+            width: 285px;
+        } 
+    }
+}
